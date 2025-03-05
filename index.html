@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mototienda</title>
-    <link rel="icon" sizes="16x16" href="/images/logo-transparent.ico">
+    <title>Uppercut-Box</title>
+    <link rel="icon" sizes="16x16" href="images/logo-transparent.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css">
     <style>
         @media(max-width:1520px) {
@@ -12,31 +12,27 @@
                 display: none;
             }
         }
-
-        #nav-mobile-btn.close span:first-child {
-            transform: rotate(45deg);
-            top: 4px;
-            position: relative;
-            background: #a0aec0;
-        }
-
-        #nav-mobile-btn.close span:nth-child(2) {
-            transform: rotate(-45deg);
-            margin-top: 0;
-            background: #a0aec0;
-        }
     </style>
 </head>
+
 <body class="overflow-x-hidden antialiased">
+    <div class="bg-indigo-600 text-white py-3">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-6">
+                <div class="font-bold">¡OFERTA LIMITADA!</div>
+                <div>Solo quedan <span class="font-bold text-yellow-300">15 unidades</span> con envío GRATIS</div>
+                <div class="hidden md:block">|</div>
+                <div>Oferta válida por: <span class="font-bold text-yellow-300" id="countdown">23:59:59</span></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header class="relative z-50 w-full h-24">
         <div class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
             <a href="/" class="relative flex items-center inline-block h-full font-black leading-none mt-5">
-                <img src="/images/logo-transparent-png.png" width="200" height="200" alt="Logo">
+                <img src="images/logo-transparent.png" width="200" height="200" alt="Logo">
             </a>
-            <nav id="nav" class="absolute top-0 left-0 z-50 flex flex-col items-center justify-between hidden w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-white border-t border-gray-200 md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative">
-        
-            </nav>
             <div class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
                 <a href="#_" class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all duration-300 bg-indigo-700 rounded shadow-md font-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl invisible">Get Started</a>
                 <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block" viewBox="0 0 818 815" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -68,38 +64,37 @@
                             <use fill="url(#c)" xlink:href="#b" />
                         </g>
                         <g transform="rotate(29 421.929 414.496)">
-                            <use fill="#000" filter="url
-
-(#d)" xlink:href="#e" />
+                            <use fill="#000" filter="url(#d)" xlink:href="#e" />
                             <use fill="url(#f)" xlink:href="#e" />
                         </g>
                     </g>
                 </svg>
-            </div>
-            <div id="nav-mobile-btn" class="absolute top-0 right-0 z-50 block w-6 mt-8 mr-10 cursor-pointer select-none md:hidden sm:mt-10">
-                <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
-                <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
             </div>
         </div>
     </header>
     <!-- End Header Section-->
 
     <!-- BEGIN HERO SECTION -->
-    
     <div class="relative items-center justify-center w-full overflow-x-hidden lg:pt-10 lg:pb-10 xl:pt-20">
         <div class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
             <div class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
-                <p class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20">UPPERCUT-BOX</p>
                 <h1 class="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8">
                     Cada día se roban <span class="text-indigo-600">120 motos</span> en Colombia. <br>
-                    ¿La tuya está protegida?
+                    <span class="text-red-600">¿Qué pasaría si la tuya es la siguiente?</span>
                 </h1>
                 
-                <p class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xxl lg:pr-20">UPPERCUT-BOX es un sistema de seguridad para motos que controla el encendido del vehículo mediante un patrón definido por ti</p>
+                <p class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xxl lg:pr-20">UPPERCUT-BOX es un sistema de seguridad para motos que bloquea el encendido mediante un patrón secreto que solo tú conoces. Sin código, no hay arranque</p>
                 <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="relative self-start inline-block w-auto px-8 py-4 mx-auto mt-0 text-base font-bold text-white bg-indigo-600 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 font-bold lg:mx-0">
-                    Compra
+                    Protege tu moto ahora
                 </a>
                 
+                
+
+                <div class="flex-col hidden mt-12 sm:flex lg:mt-24">
+                    <div class="flex">
+                        <!-- SVGs here -->
+                    </div>
+                </div>
 
                 <div class="flex-col hidden mt-12 sm:flex lg:mt-24">
                     <div class="flex">
@@ -141,175 +136,399 @@
     <!-- HERO SECTION END -->
 
     <!-- ESTADÍSTICAS SECTION START -->
-    <section id="proteccion" class="py-16 bg-gray-100">
-<section id="estadisticas" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-8 max-w-6xl text-center">
-        <h2 class="text-4xl font-black text-gray-800 mb-6">El robo de motos en Colombia</h2>
-        <p class="text-lg text-gray-600 mb-10">
-            Según estadísticas recientes, cada día se reportan más de <strong>120 robos de motos</strong> en Colombia.
-            Los meses con más robos son <strong>junio</strong> y <strong>diciembre</strong>, especialmente en ciudades
-            principales como Bogotá, Medellín y Cali.
-            <img src="images/uppercutladron.png" alt="Moto" class="w-1/2 absolute right-0 transform translate-x-1/2">
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold text-indigo-600">4,000+</h3>
-                <p class="text-gray-600">Motos robadas al mes</p>
+    <section id="estadisticas" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-8 max-w-6xl text-center">
+            <h2 class="text-4xl font-black text-gray-800 mb-6">El robo de motos en Colombia</h2>
+            <p class="text-lg text-gray-600 mb-10">
+                Según estadísticas recientes, cada día se reportan más de <strong>120 robos de motos</strong> en Colombia.
+                Los meses con más robos son <strong>junio</strong> y <strong>diciembre</strong>, especialmente en ciudades
+                principales como Bogotá, Medellín y Cali.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-indigo-600">4,000+</h3>
+                    <p class="text-gray-600">Motos robadas al mes</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-indigo-600">120+</h3>
+                    <p class="text-gray-600">Motos robadas al día</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-indigo-600">48,000+</h3>
+                    <p class="text-gray-600">Robos en el último año</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-red-600">$4-6 millones</h3>
+                    <p class="text-gray-600">Pérdida promedio por robo</p>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold text-indigo-600">120+</h3>
-                <p class="text-gray-600">Motos robadas al día</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold text-indigo-600">48,000+</h3>
-                <p class="text-gray-600">Robos en el último año</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold text-indigo-600">Junio y Diciembre</h3>
-                <p class="text-gray-600">Meses más peligrosos</p>
+            <div class="mt-10 bg-yellow-50 p-6 rounded-lg shadow text-left">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">El verdadero costo del robo de tu moto:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li><strong>Pérdida económica inmediata</strong> - El valor completo de tu moto</li>
+                    <li><strong>Pérdida de ingresos</strong> - Días o semanas sin poder trabajar</li>
+                    <li><strong>Estrés y angustia</strong> - El impacto emocional de perder tu medio de transporte</li>
+                    <li><strong>Gastos de transporte alternativo</strong> - Mientras consigues otra moto</li>
+                </ul>
+                <p class="mt-4 font-bold text-gray-800">Todo esto por <span class="text-red-600">mucho más</span> de lo que cuesta proteger tu moto con UPPERCUT-BOX.</p>
             </div>
         </div>
-    </div>
-</section>
-<!-- ESTADÍSTICAS SECTION END -->
+    </section>
+    <!-- ESTADÍSTICAS SECTION END -->
 
-<!-- PROTECCIÓN SECTION START -->
-<section id="proteccion" class="py-16 bg-white">
-    <div class="container mx-auto px-8 max-w-6xl text-center">
-        <h2 class="text-4xl font-black text-gray-800 mb-6">Presentamos UPPERCUT-BOX: Tu guardián invisible</h2>
-        <p class="text-lg text-gray-600 mb-8">
-            El primer sistema de seguridad que convierte <strong>TU MOTO</strong> en una fortaleza impenetrable.
-        </p>
-        <h3 class="text-2xl font-bold text-indigo-600 mb-4">¿Qué hace especial a UPPERCUT?</h3>
-        <p class="text-lg text-gray-600 mb-6">
-            No es una llave. No es una alarma común. Es tu código personal, creado por ti, solo tú conoces el secreto para encender tu moto
-        </p>
-        <ul class="list-disc list-inside text-left inline-block mb-8">
-            <li class="text-lg text-gray-600"><strong>Señales de luces</strong></li>
-            <li class="text-lg text-gray-600"><strong>Toques de pito</strong></li>
-            <li class="text-lg text-gray-600"><strong>Patrones de frenado</strong></li>
-        </ul>
-        <p class="text-lg text-gray-600">
-            Los ladrones no pueden robar lo que no pueden encender.
-        </p>
-        <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="mt-8 inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
-            Protege tu moto ahora
-        </a>
-    </div>
-</section>
-<!-- PROTECCIÓN SECTION END -->
+    <!-- PROTECCIÓN SECTION START -->
+    <section id="proteccion" class="py-16 bg-white">
+        <div class="container mx-auto px-8 max-w-6xl text-center">
+            <h2 class="text-4xl font-black text-gray-800 mb-6">Presentamos UPPERCUT-BOX: Tu guardián invisible</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                El primer sistema de seguridad que convierte <strong>TU MOTO</strong> en una fortaleza impenetrable <span class="text-indigo-600 font-bold">por solo $89,900</span>.
+            </p>
+            <h3 class="text-2xl font-bold text-indigo-600 mb-4">¿Qué hace especial a UPPERCUT?</h3>
+            <p class="text-lg text-gray-600 mb-6">
+                No es una llave. No es una alarma común. Es <strong>tu código personal secreto</strong>, creado por ti, que solo tú conoces para encender tu moto.
+            </p>
+            <div class="bg-gray-50 p-6 rounded-lg mb-8 text-left mx-auto max-w-2xl">
+                <h4 class="text-xl font-bold text-gray-800 mb-3">Crea tu código usando:</h4>
+                <ul class="text-lg text-gray-600 space-y-3">
+                    <li class="flex items-center"><span class="text-indigo-600 mr-2">✓</span> <strong>Señales de luces</strong> - Simples secuencias</li>
+                    <li class="flex items-center"><span class="text-indigo-600 mr-2">✓</span> <strong>Toques de pito</strong> - Patrones que tú defines</li>
+                    <li class="flex items-center"><span class="text-indigo-600 mr-2">✓</span> <strong>Patrones de frenado</strong> - Combinaciones que solo tú conoces</li>
+                    <li class="flex items-center"><span class="text-indigo-600 mr-2">✓</span> <strong>Entre otras señales</strong></li>
+                </ul>
+            </div>
+            <p class="text-lg text-gray-600 font-bold">
+                Los ladrones no pueden robar lo que no pueden encender.
+            </p>
+            <div class="mt-6 bg-indigo-50 p-4 rounded-lg inline-block">
+                <p class="text-indigo-800 font-bold">¡OFERTA LIMITADA! Solo quedan 15 unidades con envío GRATIS</p>
+            </div>
+            <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="mt-8 inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
+                Protege tu moto ahora
+            </a>
+        </div>
+    </section>
+    <!-- PROTECCIÓN SECTION END -->
 
 <!-- POR QUÉ UPPERCUT SECTION START -->
+<!-- POR QUÉ UPPERCUT SECTION START -->
 <img src="images/motofoto1.png" alt="Moto" class="w-1/2 absolute left-0 transform -translate-x-1/2 hidden md:block">
-<section id="por-que-uppercut" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-8 max-w-6xl text-center">
-        <h2 class="text-4xl font-black text-gray-800 mb-6">¿Por qué UPPERCUT?</h2>
-        <ul class="list-disc list-inside text-left inline-block">
-            <li class="text-lg text-gray-600"><strong>INVISIBLE:</strong> Los ladrones no pueden desactivar lo que no pueden encontrar</li>
-            <li class="text-lg text-gray-600"><strong>PERSONALIZABLE:</strong> Tú creas el código que mejor recuerdes</li>
-            <li class="text-lg text-gray-600"><strong>EFECTIVO:</strong> Sin el código correcto, tu moto simplemente no arrancará</li>
-            <li class="text-lg text-gray-600"><strong>SIMPLE:</strong> Sin complicaciones, sin apps, sin baterías que cargar</li>
-        </ul>
-    </div>
-</section>
-<!-- POR QUÉ UPPERCUT SECTION END -->
-
-<!-- SIMPLE Y PODEROSO SECTION START -->
-<section id="simple-y-poderoso" class="py-16 bg-white">
-    <div class="container mx-auto px-8 max-w-6xl text-center">
-        <h2 class="text-4xl font-black text-gray-800 mb-6">Así de simple. Así de poderoso</h2>
-        <ul class="list-disc list-inside text-left inline-block mb-8">
-            <li class="text-lg text-gray-600"><strong>Instala UPPERCUT</strong> (discretamente, que nadie lo note)</li>
-            <li class="text-lg text-gray-600"><strong>Crea tu código secreto personal</strong></li>
-            <li class="text-lg text-gray-600"><strong>Esconde el dispositivo</strong></li>
-        </ul>
-        <p class="text-lg text-gray-600 mb-6">¡Listo! Tu moto solo encenderá con <strong>TU</strong> secuencia.</p>
-    </div>
-</section>
-<!-- SIMPLE Y PODEROSO SECTION END -->
-
-
-  <!-- BEGIN FEATURES SECTION -->
-  <div class="relative px-8 py-10 bg-gray-100 border-t border-gray-200 md:py-16 lg:py-24 xl:py-10 xl:px-0">
-    <div id="pricing" class="container flex flex-col items-center h-full max-w-6xl mx-auto sm:px-4"> <!-- Añadí sm:px-4 para margen horizontal en móvil -->
-        <section id="proteccion" class="py-16 md:py-8"> <!-- Cambié el padding a py-8 para reducir el espacio -->
-            <h3 class="w-full max-w-2xl px-8 mt-2 text-2xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl mb-6">
-                ¿Cómo funciona?
-            </h3>
-            <div class="w-full flex flex-col md:flex-row md:justify-around items-center md:items-start pb-0"> <!-- Cambié el padding-bottom a 0 -->
-                <ul class="list-disc text-left mb-6 text-gray-700 text-lg md:text-xl leading-relaxed">
-                    <li class="mb-6">
-                        <strong class="text-gray-900">Instalar el dispositivo en el vehículo:</strong> Coloca el dispositivo discretamente para que nadie pueda detectarlo.
-                    </li>
-                    <li class="mb-6">
-                        <strong class="text-gray-900">Establecer un código y confirmarlo:</strong> Crea un código personal usando señales de luces, toques de pito o patrones de frenado.
-                    </li>
-                    <li>
-                        <strong class="text-gray-900">Comprobar el bloqueo y desbloqueo del encendido:</strong> Asegúrate de que tu código personal bloquea y desbloquea correctamente el encendido.
-                    </li>
-                </ul>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YkpiRGZMI9M?si=NWRhoXG2kVrtHyhn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- POR QUÉ UPPERCUT SECTION START -->
+<img src="images/motofoto1.png" alt="Moto" class="w-1/2 absolute left-0 transform -translate-x-1/2 hidden md:block">
+    <section id="por-que-uppercut" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-8 max-w-6xl text-center">
+            <h2 class="text-4xl font-black text-gray-800 mb-6">¿Por qué UPPERCUT?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+                <div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 mr-2 mt-1">✓</span>
+                            <div>
+                                <strong class="text-gray-800">INVISIBLE:</strong> 
+                                <p class="text-gray-600">Los ladrones no pueden desactivar lo que no pueden encontrar</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 mr-2 mt-1">✓</span>
+                            <div>
+                                <strong class="text-gray-800">PERSONALIZABLE:</strong>
+                                <p class="text-gray-600">Tú creas el código que mejor recuerdes, sin necesidad de apps complicadas</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 mr-2 mt-1">✓</span>
+                            <div>
+                                <strong class="text-gray-800">EFECTIVO:</strong>
+                                <p class="text-gray-600">Sin el código correcto, tu moto simplemente no arrancará</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 mr-2 mt-1">✓</span>
+                            <div>
+                                <strong class="text-gray-800">SIMPLE:</strong>
+                                <p class="text-gray-600">Sin complicaciones, sin apps, sin baterías que cargar</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 mr-2 mt-1">✓</span>
+                            <div>
+                                <strong class="text-gray-800">ECONÓMICO:</strong>
+                                <p class="text-gray-600">A solo $89,900 - Menos que un tanque lleno y un mantenimiento básico</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 mr-2 mt-1">✓</span>
+                            <div>
+                                <strong class="text-gray-800">TRANQUILIDAD:</strong>
+                                <p class="text-gray-600">Protege tu inversión y tu medio de trabajo de forma permanente</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
+            
+            <div class="mt-10 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">UPPERCUT vs Otras soluciones</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-700">
+                        <thead class="text-gray-700 bg-gray-50">
+                            <tr>
+                                <th class="px-4 py-2">Solución</th>
+                                <th class="px-4 py-2">Precio</th>
+                                <th class="px-4 py-2">Efectividad</th>
+                                <th class="px-4 py-2">Instalación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-indigo-50">
+                                <td class="px-4 py-3 font-bold">UPPERCUT-BOX</td>
+                                <td class="px-4 py-3">$89,900</td>
+                                <td class="px-4 py-3">Alta</td>
+                                <td class="px-4 py-3">10 minutos</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3">Alarmas tradicionales</td>
+                                <td class="px-4 py-3">$150,000+</td>
+                                <td class="px-4 py-3">Media</td>
+                                <td class="px-4 py-3">Profesional</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3">Guaya/Candado</td>
+                                <td class="px-4 py-3">$50,000+</td>
+                                <td class="px-4 py-3">Baja</td>
+                                <td class="px-4 py-3">No requiere</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3">GPS Tracker</td>
+                                <td class="px-4 py-3">$200,000+</td>
+                                <td class="px-4 py-3">Solo rastreo</td>
+                                <td class="px-4 py-3">Profesional</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- POR QUÉ UPPERCUT SECTION END -->
+
+    <!-- SIMPLE Y PODEROSO SECTION START -->
+    <section id="simple-y-poderoso" class="py-16 bg-white">
+        <div class="container mx-auto px-8 max-w-6xl text-center">
+            <h2 class="text-4xl font-black text-gray-800 mb-6">Así de simple. Así de poderoso</h2>
+            <ul class="list-disc list-inside text-left inline-block mb-8">
+                <li class="text-lg text-gray-600"><strong>Instala UPPERCUT</strong> (discretamente, que nadie lo note)</li>
+                <li class="text-lg text-gray-600"><strong>Crea tu código secreto personal</strong></li>
+                <li class="text-lg text-gray-600"><strong>Esconde el dispositivo</strong></li>
+            </ul>
+            <p class="text-lg text-gray-600 mb-6">¡Listo! Tu moto solo encenderá con <strong>TU</strong> secuencia.</p>
+        </div>
+    </section>
+    <!-- SIMPLE Y PODEROSO SECTION END -->
+
+    <!-- BEGIN COMO FUNCIONA SECTION -->
+    <div class="relative px-8 py-10 bg-gray-100 border-t border-gray-200 md:py-16 xl:py-10 xl:px-0">
+        <div id="pricing" class="container flex flex-col items-center h-full max-w-6xl mx-auto">
+            <section id="como-funciona" class="py-16 md:py-8 w-full">
+                <h3 class="w-full max-w-2xl px-8 mt-2 text-4xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 mb-10">
+                    Mira lo fácil que es proteger tu moto
+                </h3>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+                    <!-- Columna de Instrucciones -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-bold text-indigo-700 mb-6">Tres pasos simples:</h4>
+                        <ul class="space-y-6 text-gray-700 text-lg leading-relaxed">
+                            <li class="flex items-start">
+                                <span class="bg-indigo-100 text-indigo-700 font-bold rounded-full w-7 h-7 flex items-center justify-center mr-3 mt-1">1</span>
+                                <div>
+                                    <strong class="text-gray-900">Instalar el dispositivo:</strong>
+                                    <p>Coloca el dispositivo discretamente para que nadie pueda detectarlo.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-indigo-100 text-indigo-700 font-bold rounded-full w-7 h-7 flex items-center justify-center mr-3 mt-1">2</span>
+                                <div>
+                                    <strong class="text-gray-900">Crear tu código personal:</strong>
+                                    <p>Establece un patrón usando señales de luces, toques de pito o patrones de frenado.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-indigo-100 text-indigo-700 font-bold rounded-full w-7 h-7 flex items-center justify-center mr-3 mt-1">3</span>
+                                <div>
+                                    <strong class="text-gray-900">Comprobar el sistema:</strong>
+                                    <p>Asegúrate de que tu código bloquea y desbloquea correctamente el encendido.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-6 text-center">
+                            <p class="text-gray-500 italic">*Incluye instrucciones detalladas paso a paso</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna de Video -->
+                    <div class="bg-white p-4 rounded-lg shadow-lg">
+                        <div class="relative pb-2">
+                            <div class="absolute -inset-1 bg-indigo-500 rounded-lg blur opacity-25"></div>
+                            <div class="relative">
+                                <iframe class="w-full h-64 md:h-80 rounded-lg shadow-sm" src="https://www.youtube.com/embed/YkpiRGZMI9M?si=NWRhoXG2kVrtHyhn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <h4 class="text-center text-lg font-bold text-indigo-700 mt-4">Video explicativo</h4>
+                    </div>
+                </div>
+                
+                <!-- Botón CTA debajo del video -->
+                <div class="text-center mt-10">
+                    <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
+                        Consigue tu UPPERCUT-BOX hoy mismo
+                    </a>
+                    <p class="mt-3 text-gray-600">Envío gratis a toda Colombia - Instalación incluida</p>
+                </div>
+            </section>
+        </div>
     </div>
-</div>
+    <!-- END COMO FUNCIONA SECTION -->
 
-<!-- END FEATURES SECTION -->
-
- <!-- Sección Testimonios -->
- <div id="testimonios" class="relative w-full px-8 py-10 bg-white md:py-16 lg:py-24 xl:py-10 xl:px-0">
-    <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-gray-900 mb-8">Usuarios satisfechos</h3>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <!-- Video 1 -->
-            <div class="aspect-w-16 aspect-h-9">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/RXcHmI17rKc" frameborder="0" allowfullscreen></iframe>
+    <!-- Sección Testimonios -->
+    <div id="testimonios" class="relative w-full px-8 py-10 bg-indigo-50 md:py-16 lg:py-24 xl:py-10 xl:px-0">
+        <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
+            <h3 class="text-4xl font-black text-gray-900 mb-4">Testimonios de usuarios reales</h3>
+            <p class="text-xl text-gray-600 mb-10 max-w-3xl text-center">Mira lo que dicen nuestros clientes que ya protegen sus motos con UPPERCUT-BOX</p>
+            
+            <!-- Videos con bordes y sombras mejoradas -->
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3 w-full max-w-5xl">
+                <!-- Video 1 -->
+                <div class="bg-white p-3 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/RXcHmI17rKc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm italic">"Intento de robo frustrado gracias a UPPERCUT-BOX. Los ladrones no pudieron arrancar mi moto."</p>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="bg-white p-3 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/rGLvX6eD1X4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm italic">"Inversión que me da tranquilidad todos los días. Instalación super sencilla."</p>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="bg-white p-3 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/mtjr1_5gAg8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm italic">"Después de perder una moto, ahora tengo la seguridad que necesitaba a un precio accesible."</p>
+                </div>
             </div>
-            <!-- Video 2 -->
-            <div class="aspect-w-16 aspect-h-9">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/rGLvX6eD1X4" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- Video 3 -->
-            <div class="aspect-w-16 aspect-h-9">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/mtjr1_5gAg8" frameborder="0" allowfullscreen></iframe>
+            
+            <!-- Llamada a la acción después de los videos -->
+            <div class="mt-12 bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto text-center">
+                <h4 class="text-xl font-bold text-gray-800 mb-3">¿Por qué arriesgarte cuando la solución es tan simple?</h4>
+                <p class="text-gray-600 mb-6">Únete a cientos de motociclistas que ya protegen su inversión con UPPERCUT-BOX</p>
+                <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
+                    Quiero proteger mi moto ahora
+                </a>
             </div>
         </div>
     </div>
-</div>
 
-
-
-   <!-- Sección La Dura Realidad -->
-<div id="features" class="relative w-full px-8 py-10 border-t border-gray-200 bg-white md:py-16 lg:py-24 xl:py-10 xl:px-0">
-    <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
-        <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase"></h2>
-        <h3 class="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
-            La dura realidad
-        </h3>
-        <ul class="list-disc list-inside text-left inline-block mt-6 mb-8">
-            <li class="text-lg text-gray-600"><strong>Un robo toma menos de 2 minutos</strong></li>
-            <li class="text-lg text-gray-600"><strong>Las alarmas tradicionales son fácilmente neutralizadas</strong></li>
-            <li class="text-lg text-gray-600"><strong>Las aseguradoras no cubren el valor real de tu moto</strong></li>
-            <li class="text-lg text-gray-600"><strong>Recuperar una moto robada es casi imposible</strong></li>
-        </ul>
+    <!-- Sección La Dura Realidad -->
+    <div id="features" class="relative w-full px-8 py-10 border-t border-gray-200 bg-white md:py-16 xl:py-10 xl:px-0">
+        <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
+            <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase"></h2>
+            <h3 class="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
+                La dura realidad
+            </h3>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+                <div class="bg-red-50 p-6 rounded-lg shadow">
+                    <h4 class="text-xl font-bold text-red-700 mb-4">Lo que muchos enfrentan:</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <p><strong>Un robo toma menos de 2 minutos</strong> - Antes de que te des cuenta, ya no está</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <p><strong>Las alarmas tradicionales son fácilmente neutralizadas</strong> - Los ladrones conocen los trucos</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <p><strong>Las aseguradoras no cubren el valor real</strong> - Siempre pierdes dinero</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <p><strong>Recuperar una moto robada es casi imposible</strong> - Menos del 5% se recuperan</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-lg shadow">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">Lo que tú puedes tener:</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <p><strong>Tranquilidad total</strong> - Sabiendo que tu moto está protegida</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <p><strong>Protección invisible</strong> - Que los ladrones no pueden detectar</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <p><strong>Un sistema que realmente funciona</strong> - Sin el código, no hay arranque</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <p><strong>Inversión única</strong> - Sin pagos mensuales ni mantenimientos costosos</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-yellow-100 p-6 rounded-lg max-w-2xl text-left">
+                <h4 class="text-xl font-bold text-gray-800 mb-3">Historias reales:</h4>
+                <p class="text-gray-700 italic mb-4">"Trabajo como domiciliario y perdí mi moto el año pasado. Me quedé sin trabajo por 3 semanas mientras conseguía otra. Perdí más de 1 millón en ingresos, además del valor de la moto."</p>
+                <p class="text-gray-700 italic">- Carlos M., Bogotá</p>
+            </div>
+        </div>
     </div>
-</div>
 
-<!-- Sección La Decisión es Simple -->
-<div class="relative w-full px-8 py-10 bg-gray-100 md:py-16 lg:py-24 xl:py-10 xl:px-0">
-    <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-gray-900 mt-8">La decisión es simple</h3>
-        <p class="text-lg text-gray-600 mt-4">
-            Puedes seguir confiando en la suerte... O puedes tomar acción HOY y proteger tu inversión con la
-            seguridad que solo <strong>UPPERCUT</strong> te puede brindar.
-        </p>
-        <p class="text-lg text-gray-600 font-bold mt-4">Tu Moto. Tu Código. Tu Tranquilidad.</p>
-        <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="mt-8 inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
-            Protege tu moto ahora
-        </a>
+    <!-- Sección La Decisión es Simple -->
+    <div class="relative w-full px-8 py-10 bg-gray-100 md:py-16 lg:py-24 xl:py-10 xl:px-0">
+        <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-gray-900 mt-8">La decisión es simple</h3>
+            <div class="bg-white p-6 rounded-lg shadow-md mt-6 max-w-3xl text-center">
+                <p class="text-lg text-gray-600 mb-4">
+                    <span class="text-red-600 font-bold">$4,000,000+</span> - El costo de reemplazar una moto robada
+                </p>
+                <p class="text-lg text-gray-600 mb-4">
+                    <span class="text-red-600 font-bold">VS</span>
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    <span class="text-green-600 font-bold">$89,900</span> - La inversión en UPPERCUT-BOX
+                </p>
+                <div class="h-1 w-full bg-gray-200 mb-6">
+                    <div class="h-1 bg-green-500" style="width: 2.2%;"></div>
+                </div>
+                <p class="text-sm text-gray-500">El costo de UPPERCUT representa solo el 2.2% del valor de una moto promedio</p>
+            </div>
+            
+            <p class="text-lg text-gray-600 font-bold mt-8">Tu Moto. Tu Código. Tu Tranquilidad.</p>
+            
+            <div class="mt-6 bg-yellow-100 p-4 rounded-lg inline-block">
+                <p class="text-gray-800"><strong>¡IMPORTANTE!</strong> Quedan pocas unidades disponibles con envío gratis</p>
+            </div>
+            
+            <a href="https://wa.me/573219262792?text=Hola,%20quiero%20proteger%20mi%20moto%20con%20UPPERCUT" class="mt-8 inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
+                Protege tu moto ahora - Antes que sea tarde
+            </a>
+        </div>
     </div>
-</div>
-
 
     <!-- Purchase Section -->
             <a class="flex justify-between items-center gap-1 mt-5 hover:text-blue-500" href="tel:+573219262792">
@@ -326,17 +545,16 @@
             <div class="w-full pl-12 mr-4 text-left lg:w-1/4 sm:text-center sm:pl-0 lg:text-left">
                 <a href="/" class="flex justify-start block text-left sm:text-center lg:text-left sm:justify-center lg:justify-start">
                     <span class="flex items-start sm:items-center">
-                        <img src="/images/logo-transparent-png.png" width="200" height="200" alt="Logo">
+                        <img src="images/logo-transparent.png" width="200" height="200" alt="Logo">
                     </span>
                 </a>
-                <p class="mt-6 mr-4 text-base text-gray-500"><b>Uppercut-Box es el único dispositivo en el mercado que protege tu vehículo y tu bolsillo</b></p>
             </div>
             <div class="block w-full pl-10 mt-6 text-sm lg:w-3/4 sm:flex lg:mt-0">
                 <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none"></ul>
                 <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-800 list-none">
                     <li class="inline-block px-3 py-2 mt-5 font-bold tracking-wide uppercase md:mt-0">Escríbenos</li>
                     <li class="inline-block px-3 py-2 tracking-wide md:mt-0">
-                        <a class="flex justify-start items-center gap-1 mt-5 hover:text-blue-500" href="tel:+573219262792">
+                        <a class="flex justify-start items-center gap-1 hover:text-blue-500" href="tel:+573219262792">
                             <svg class="h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
                             <span class="inline-block">+57 3219262792</span> 
                         </a>
@@ -357,19 +575,32 @@
     </footer>
     <!-- End Footer Section -->
 
-    <!-- a little JS for the mobile nav button -->
     <script>
-        if (document.getElementById('nav-mobile-btn')) {
-            document.getElementById('nav-mobile-btn').addEventListener('click', function() {
-                if (this.classList.contains('close')) {
-                    document.getElementById('nav').classList.add('hidden');
-                    this.classList.remove('close');
-                } else {
-                    document.getElementById('nav').classList.remove('hidden');
-                    this.classList.add('close');
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            let hours = 23;
+            let minutes = 59;
+            let seconds = 59;
+            
+            setInterval(function() {
+                seconds--;
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                    if (minutes < 0) {
+                        minutes = 59;
+                        hours--;
+                        if (hours < 0) {
+                            hours = 23;
+                        }
+                    }
                 }
-            });
+                
+                countdownElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }, 1000);
         }
+        
+        document.addEventListener('DOMContentLoaded', startCountdown);
     </script>
 </body>
 </html>
